@@ -1,0 +1,36 @@
+\begin{table}
+\caption{Course-fixed-effects models of standardized student outcomes by LLM-associated word-rate decile and the post-ChatGPT period.}
+\label{tab:llm_decile_interactions_standardized}
+\begin{tabular}{lllllll}
+\toprule
+outcome_label & Grade & Lexical complexity & Readability & Syntactic complexity & Text similarity & Writing complexity \\
+term_label &  &  &  &  &  &  \\
+\midrule
+Post-ChatGPT & -0.083
+(0.018) & 0.001
+(0.012) & 0.058
+(0.017) & -0.022
+(0.018) & -0.026
+(0.019) & 0.016
+(0.014) \\
+LLM-word decile (centered) & 0.053
+(0.003) & 0.088
+(0.003) & 0.096
+(0.003) & 0.013
+(0.002) & 0.005
+(0.001) & 0.086
+(0.003) \\
+Post × LLM-word decile & -0.026
+(0.005) & 0.020
+(0.003) & 0.019
+(0.003) & -0.008
+(0.005) & -0.004
+(0.003) & 0.013
+(0.003) \\
+Course fixed effects & Yes & Yes & Yes & Yes & Yes & Yes \\
+CRV1 clustered by course & Yes & Yes & Yes & Yes & Yes & Yes \\
+Observations & 44,374 & 44,374 & 44,374 & 44,374 & 44,374 & 44,374 \\
+Courses & 479 & 479 & 479 & 479 & 479 & 479 \\
+\bottomrule
+\end{tabular}
+\end{table}

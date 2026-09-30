@@ -1,0 +1,37 @@
+\begin{table}[htbp]
+\centering
+\caption{Raw-outcome before--after course fixed-effects models. Dependent variables are the stored outcome variables used before standardization; grades are measured on the recoded 0--6 Danish grade-category scale.}
+\smallskip
+\begin{threeparttable}
+\begingroup
+\renewcommand\cellalign{t}
+\renewcommand\arraystretch{1}
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}l>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\toprule
+ & \multicolumn{1}{c}{Readability} & \multicolumn{1}{c}{Writing complexity} & \multicolumn{1}{c}{Lexical complexity} & \multicolumn{1}{c}{Syntactic complexity} & \multicolumn{1}{c}{Text similarity} & \multicolumn{1}{c}{Grade} \\
+\cmidrule(lr){2-2} \cmidrule(lr){3-3} \cmidrule(lr){4-4} \cmidrule(lr){5-5} \cmidrule(lr){6-6} \cmidrule(lr){7-7}
+ & (1) & (2) & (3) & (4) & (5) & (6) \\
+\midrule
+\addlinespace[1ex]
+After ChatGPT & \makecell{0.020*** \\ (0.002)} & \makecell{0.014*** \\ (0.002)} & \makecell{0.013*** \\ (0.002)} & \makecell{-0.002 \\ (0.002)} & \makecell{-0.005 \\ (0.004)} & \makecell{-0.068** \\ (0.023)} \\
+\addlinespace[0.5ex]
+\midrule
+\addlinespace[1ex]
+Course & x & x & x & x & x & x \\
+\addlinespace[0.5ex]
+\midrule
+\addlinespace[1ex]
+Observations & 44,374 & 44,374 & 44,374 & 44,374 & 44,374 & 44,374 \\
+\addlinespace[0.5ex]
+\addlinespace[0.5ex]
+$R^2$ & 0.471 & 0.53 & 0.53 & 0.356 & 0.866 & 0.176 \\
+\addlinespace[0.5ex]
+\bottomrule
+\end{tabularx}
+\endgroup
+\noindent\begin{minipage}{\linewidth}\smallskip\footnotesize
+Course fixed effects included. CRV1 standard errors clustered by course. * p < 0.05, ** p < 0.01, *** p < 0.001.\end{minipage}
+
+\end{threeparttable}
+\end{table}

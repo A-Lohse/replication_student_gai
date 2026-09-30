@@ -1,0 +1,23 @@
+Step,Restriction,N before,N removed,Percent removed at step,N remaining,Percent of original sample,N students,N courses,N exams,N pre,N post
+0,English-language submissions,198949,0,0.0,198949,100.0,64646,,,,
+1,Remove re-exams,198949,1152,0.6,197797,99.4,64520,5614,,,
+2,Keep courses with exam IDs and exam information,197797,62564,31.6,135233,68.0,50562,2634,6932,116085,17364
+3,Drop hand-ins without an exam label,135233,108,0.1,135125,67.9,50537,2634,6926,115977,17364
+4,Keep valid dates from 2018 onward,135125,18561,13.7,116564,58.6,43319,2353,5985,97416,17364
+5,Keep before/after periods and exclude transition month,116564,1784,1.5,114780,57.7,42962,2343,5936,97416,17364
+6,Drop incomplete cases on required metadata,114780,0,0.0,114780,57.7,42962,2343,5936,97416,17364
+7,Keep take-home examinations,114780,23175,20.2,91605,46.0,39358,1975,4797,77166,14439
+8,Remove courses that change written exam type before/after ChatGPT,91605,3023,3.3,88582,44.5,37768,1958,4767,74185,14397
+9,Keep courses observed both before and after ChatGPT,88582,33774,38.1,54808,27.5,28493,664,2587,41791,13017
+10,Remove courses with only one take-home hand-in,54808,0,0.0,54808,27.5,28493,664,2587,41791,13017
+11,Input to text-measure construction,54808,0,0.0,54808,27.5,28493,664,2587,41791,13017
+12,Keep submissions with at least 100 words,54808,251,0.5,54557,27.4,28415,664,2585,41578,12979
+13,Valid linguistic component measures,54557,337,0.6,54220,27.3,28293,663,2578,41320,12900
+14,Valid linguistic complexity indices,54220,10,0.0,54210,27.2,28290,663,2578,41313,12897
+15,Complete GAI and linguistic outcomes,54210,0,0.0,54210,27.2,28290,663,2578,41313,12897
+16,Input to final sample construction,54210,0,0.0,54210,27.2,28290,663,2578,41313,12897
+17,Valid semantic similarity,54210,753,1.4,53457,26.9,28035,635,2286,40802,12655
+18,Valid numerical grade,53457,5266,9.9,48191,24.2,26916,580,2077,36658,11533
+19,Complete downstream analysis identifiers,48191,0,0.0,48191,24.2,26916,580,2077,36658,11533
+20,Courses represented both before and after ChatGPT after final outcome restrictions,48191,3817,7.9,44374,22.3,25364,479,1843,32911,11463
+21,Final common analytical sample,44374,0,0.0,44374,22.3,25364,479,1843,32911,11463
